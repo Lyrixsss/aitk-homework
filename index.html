@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +7,173 @@
 </head>
 <body>
 
-    <div>
-    <h1>Иван</h1>
+    <header>
+        <h1>Иван</h1>
+    </header>
+
+<main>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#interests">Мои интересы</a></li>
+            <li><a href="#goals">Мои цели</a></li>
+        </ul>
+    </nav>
+
+    <div id="about">
+        <h2>Обо мне</h2>
+        <p>Привет меня зовут Иван, программист junior, есть базовые знания структуры и алгоритмов программирования.</p>
+        <p>Плохо знаю синтаксис языков и логику разработки в целом, но люблю прогерить какие либо малые пет проекты но пока что получается только с помощью чата GPT.</p>
+        <p>Люблю анимешки, играю на гитаре занимаюсь спортом, обожаю свободу. Ненавижу какие либо рамки либо притеснение меня как человека.</p>
+        <p>Моя цель в этой профессии это найти себя, понять что я хочу от этой жизни и найти дело которое будет приносить мне удовольствие и деньги.</p>
     </div>
 
-    <div>
-    <p>Привет меня зовут Иван, программист junior, есть базовые знания структуры и алгоритмов программирования.</p>
-    <p>Плохо знаю синтаксис языков и логику разработки в целом, но люблю прогерить какие либо малые пет проекты но пока что получается только с помощью чата GPT.</p>
-    <p>Люблю анимешки, играю на гитаре занимаюсь спортом, обожаю свободу. Ненавижу какие либо рамки либо притеснение меня как человека.</p>
-    <p>Моя цель в этой профессии это найти себя, понять что я хочу от этой жизни и найти дело которое будет приносить мне удовольствие и деньги.</p>
+    <div id="interests">
+        <h2>Мои интересы</h2>
+        <ul>
+            <li>Аниме</li>
+            <li>Игры</li>
+            <li>Музыка</li>
+        </ul>
     </div>
 
-    <div>
-    <ul>
-        <li>Аниме</li>
-        <li>Игры</li>
-        <li>Музыка</li>
-    </ul>
-
-    <ol>
-        <li>Достичь fullstack разработки уровня midle</li>
-        <li>Начать работать и увеличивать финансы</li>
-        <li>Создать свой первый коммерческий проект</li>
-    </ol>
+    <div id="goals">
+        <h2>Мои цели</h2>
+        <ol>
+            <li>Достичь fullstack разработки уровня midle</li>
+            <li>Начать работать и увеличивать финансы</li>
+            <li>Создать свой первый коммерческий проект</li>
+        </ol>
     </div>
 
-    <div>
-    <img src="avatar.jfif" alt="Моя аватарка" width="200" height="200">
+    <div class="avatar">
+        <h2>Фотка</h2>
+        <img src="avatar.jfif" alt="Моя аватарка" width="200" height="200">
     </div>
 
-    <div>
-    <a href="https://github.com/Lyrixsss?tab=overview&from=2026-01-01&to=2026-01-15">Мой GitHub</a>
+    <div class="github-link">
+        <h2>Ссылка</h2>
+        <a href="https://github.com/Lyrixsss?tab=overview&from=2026-01-01&to=2026-01-15">Мой GitHub</a>
     </div>
+
+    <div class = "content-container">
+        <h2>Карточки проектов</h2>
+        <div class = "content-item">
+            <h3>Проект 1</h3>
+            <p>Описание проекта 1</p>
+            <button>Подробнее</button>
+        </div>
+
+        <div class = "content-item">
+            <h3>Проект 2</h3>
+            <p>Описание проекта 2</p>
+            <button>Подробнее</button>
+        </div>
+
+        <div class = "content-item">
+            <h3>Проект 3</h3>
+            <p>Описание проекта 3</p>
+            <button>Подробнее</button>
+        </div>
+    </div>
+
+    <h2>Мои базовые языки</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>
+                    Мои базовые языки
+                </th>
+                <th>
+                    Уровень их знаний от 0 - 5
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    HTML
+                </td>
+                <td>
+                    4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CSS
+                </td>
+                <td>
+                    2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    JavaScript
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Python
+                </td>
+                <td>
+                    3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    C#
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+    </table>
+
+    <h2>Форма обратной связи</h2>
+    <form>
+        <p>
+            <label for = "name">Имя:</label><br>
+            <input type="text" id="name" name="name"><br>
+        <p>
+
+        <p>
+            <label for="email">Электронная почта:</label><br>
+            <input type="email" id="email" name="email"><br>
+        </p>
+
+        <p>
+            <label for="message">Сообщение:</label><br>
+            <textarea id="message" name="message"></textarea>
+        </p>
+
+        <p>
+            <label for="topic">Тема:</label><br>
+            <select id="topic" name="topic">
+                <option value="general">HTML</option>
+                <option value="feedback">CSS</option>
+                <option value="support">JavaScript</option>
+            </select>
+        </p>
+
+        <p>
+        <label>
+            <input type="checkbox" name="agreement">
+            Я согласен с условиями обработки данных
+        </label>
+    
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2026 Иван. Все права защищены.</p>
+</footer>
+
 </body>
 </html>
